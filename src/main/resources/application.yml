@@ -1,0 +1,22 @@
+server:
+  port: 8888
+
+spring:
+  security:
+    user:
+      name: admin
+      password: s3cr3t
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/vakmancordero/user-accounts-config
+          clone-on-start: true
+          timeout: 6
+          repos:
+            user-accounts:
+                uri:
+                pattern: user-accounts-*
+                #searchPaths: '{application}'
+                force-pull: true
+debug: true

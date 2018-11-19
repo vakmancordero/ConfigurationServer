@@ -1,0 +1,7 @@
+encrypt:
+#  key: secretkey symmetric
+  key-store:
+    alias: config-server-key
+    password: my-s70r3-s3cr3t
+    secret: my-k34-s3cr3t
+    location: classpath:/config-server.jks

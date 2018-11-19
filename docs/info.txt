@@ -1,0 +1,14 @@
+
+
+generate key pair:
+
+-sigalg: SHA512withRSA
+
+keytool -genkeypair -alias config-server-key -keyalg RSA -keysize 4096 -sigalg SHA512withRSA -dname "CN=ConfigServer,OU=SpringCloud,O=Tecgurus" -keypass my-k34-s3cr3t -keystore config-server.jks -storepass my-s70r3-s3cr3t
+
+without -sigalg
+
+keytool -genkeypair -alias config-server-key -keyalg RSA -dname "CN=ConfigServer,OU=SpringCloud,O=Tecgurus,L=City,S=State,C=US" -keypass my-k34-s3cr3t -keystore config-server.jks -storepass my-s70r3-s3cr3t
+
+https://www.oracle.com/technetwork/java/javase/downloads/jce-all-download-5170447.html
+https://deveshsharmablogs.wordpress.com/2012/10/09/fixing-java-security-invalidkeyexception-illegal-key-size-exception/
