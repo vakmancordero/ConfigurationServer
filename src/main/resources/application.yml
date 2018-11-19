@@ -1,5 +1,6 @@
 server:
   port: 8888
+debug: true
 
 spring:
   security:
@@ -15,8 +16,7 @@ spring:
           timeout: 6
           repos:
             user-accounts:
-                uri:
-                pattern: user-accounts-*
-                #searchPaths: '{application}'
-                force-pull: true
-debug: true
+              uri:
+              pattern: user-accounts-*
+              #searchPaths: '{application}'
+              force-pull: true
