@@ -11,12 +11,16 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/vakmancordero/user-accounts-config
           clone-on-start: true
           timeout: 6
           repos:
             user-accounts:
-              uri:
+              uri: https://github.com/vakmancordero/user-accounts-config
               pattern: user-accounts-*
+              #searchPaths: '{application}'
+              force-pull: true
+            products-service:
+              uri: https://github.com/vakmancordero/products-service-config
+              pattern: products-service-*
               #searchPaths: '{application}'
               force-pull: true

@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-ConfigServerApp<config-server>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.tecgurus.configserver.ConfigServerApp",
+            "projectName": "config-server",
+            "args": ""
+        }
+    ]
+}
